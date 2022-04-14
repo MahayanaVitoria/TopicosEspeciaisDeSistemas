@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+
+    <body>
+
+        <h1>Calcular média do aluno:</h1>
+
+        <form>
+            <div>
+                <label for="nomeAluno">Nome do Aluno:</label>
+                <input type="text" id="nomeAluno">
+            </div><br>
+            <div>
+                <label for="nota1">Nota A1:</label>
+                <input type="number" id="nota1">
+            </div><br>
+            <div>
+                <label for="nota2">Nota A2:</label>
+                <input type="number" id="nota2">
+            </div><br>
+
+            <div class="button">
+            <button type="submit" onclick="media(nota1, nota2)">Calcular</button>
+            </div>
+        </form>
+
+        
+
+        <script>
+            function media(nota1, nota2){
+            var nota1 = parseFloat(document.getElementById("nota1").value);
+            var nota2 = parseFloat(document.getElementById("nota2").value);
+            var nomeAluno = document.getElementById("nomeAluno").value;
+
+            var media = (nota1 + nota2)/2;
+
+            if(media >= 6)
+            alert ('O(a) aluno(a) ' + nomeAluno + ' tem média ' + media + ' e está APROVADO!');
+            
+            else
+            alert ('O(a) aluno(a) ' + nomeAluno + ' tem média ' + media + ' e está REPROVADO!');
+            
+        }
+        </script>
+    </body>
+
+</html>
