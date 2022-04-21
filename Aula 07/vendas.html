@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mahãyana">
+    <title>Vendas</title>
+</head>
+<body>
+
+    <h2>Comissão por Vendas:</h2>
+
+    <select onchange="combo(this.value)">
+        <option>Vendedor 1</option>
+        <option>Vendedor 2</option>
+        <option>Vendedor 3</option>
+        <option>Vendedor 4</option>
+        <option>Vendedor 5</option>
+    </select><br><br>
+
+    <input type="number" id="valorVenda" placeholder="Digite o valor da venda">
+    
+    <button onclick="calcular()">Calcular</button><br><br>
+
+    <div id="tabela">
+
+    </div>
+
+    <script>
+
+        // function combo(vendedor);
+        //     let idvendedor = vendedor;
+ 
+        function calcular() {
+            // var num1=document.getElementById("valorVenda").value;  
+
+
+            var tabela = document.createElement("table");
+            var cabecalho = document.createElement("thead");
+            var corpo = document.createElement("tbody");
+
+            tabela.appendChild(cabecalho);
+            tabela.appendChild(corpo);
+
+            document.getElementById("tabela").appendChild(tabela);
+
+        }
+
+
+    </script>
+
+
+<h3>Exemplo:</h3>
+
+<table border="1">
+    <tr>
+        <td>Vendedor</td>
+        <td>Vendas</td>
+        <td>Valor</td>
+        <td>Comissão</td>
+    </tr>
+    <tr>
+        <td>Vendedor 1</td>
+        <td>1</td>
+        <td>50</td>
+        <td>10</td>
+    <tr>
+    <tr>
+        <td>Vendedor 3</td>
+        <td>2</td>
+        <td>10</td>
+        <td>2</td>
+    <tr>
+    <tr>
+        <td>Total:</td>
+        <td>2</td>
+        <td>60</td>
+        <td>12</td>
+    </tr>
+</table>
+
+
+        
+</body>
+</html>
