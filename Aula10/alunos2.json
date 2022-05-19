@@ -1,0 +1,9 @@
+[{
+    "nome": "Joaquim",
+    "idade": 6,
+    "endereco": "Rua xxxx, 101",
+    "email": "joaquim@email.com",
+    "atextra": ["natação", "judo"]
+}
+
+]
