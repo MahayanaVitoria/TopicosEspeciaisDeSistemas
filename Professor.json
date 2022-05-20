@@ -1,0 +1,34 @@
+[{
+    "nome":"João Rodrigues Lima",
+    "materia":"Conhecimentos Gerais",
+    "id":"1",
+    "aula":{
+        "nome":"biologia",
+        "data":"01/05/2022"}
+    },
+    {
+    "nome":"Beatriz Almeida Ferreira",
+    "materia":"Educação Física",
+    "id":"2"
+    },
+    {        
+    "nome":"Laura Santos Martins",
+    "materia":"Inglês",
+    "id":"3"
+    },
+    {
+    "nome":"Marcos Gomes Cavalcanti",
+    "materia":"Espanhol",
+    "id":"4"
+    },
+    {
+    
+    "nome":"Aline Souza Dias",
+    "materia":"Ballet",
+    "id":"5"
+    },{
+
+    "nome":"Rafael Cardoso Oliveira",
+    "materia":"Judô",
+    "id":"6"
+}]
